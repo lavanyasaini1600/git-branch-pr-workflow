@@ -31,7 +31,7 @@ This exercise will guide you to the basic git workflow of contributing your code
 
    (The name of the branch does not need to have the word _add_ in it, but it's a reasonable thing to include because the purpose of this branch is to add your name to a list.)
 
-1. **Make changes** - Open contributors.md; add your github link such as: `https://github.com/avcoder`.
+1. **Make changes** - Open contributors.md; add your initials and github link using markdown format such as: `[AV](http://github.com/avcoder)`
 
    If you go to the project directory and execute the command `git status`, you'll see there are changes.
 
