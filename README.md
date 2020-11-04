@@ -1,7 +1,11 @@
 This exercise will guide you to the basic git workflow of contributing your code to existing projects.
 
+# Fork
+
 1. **Fork repo** by clicking on the fork button on the top of this page.
    This will copy my repo and 'paste' it under your Github account.
+
+# Clone
 
 1. **Clone your forked repository** to your computer. Go to your GitHub account, open the forked repository, click on the green code button and then click the _copy to clipboard_ icon.
 
@@ -10,6 +14,8 @@ This exercise will guide you to the basic git workflow of contributing your code
    ```
    git clone "url you just copied"
    ```
+
+# Branch
 
 1. **Create a branch** - Change to the repository directory on your computer (if you are not already there):
 
@@ -31,15 +37,21 @@ This exercise will guide you to the basic git workflow of contributing your code
 
    (The name of the branch does not need to have the word _add_ in it, but it's a reasonable thing to include because the purpose of this branch is to add your name to a list.)
 
+# Edits
+
 1. **Make changes** - Open contributors.md; add your initials and github link using markdown format such as: `[AV](http://github.com/avcoder)`
 
    If you go to the project directory and execute the command `git status`, you'll see there are changes.
+
+# Add
 
 1. **Add those changes** to the branch you just created using the `git add` command:
 
    ```
    git add contributors.md
    ```
+
+# Commit
 
 1. **Commit those changes** using the `git commit` command:
 
@@ -48,6 +60,8 @@ This exercise will guide you to the basic git workflow of contributing your code
    ```
 
    replacing `<your-initials>` with your initials.
+
+# Push branch
 
 1. **Push changes** to GitHub
 
@@ -58,6 +72,8 @@ This exercise will guide you to the basic git workflow of contributing your code
    ```
 
    replacing `<add-your-branch-name>` with the name of the branch you created earlier.
+
+# Pull Request (PR)
 
 1. **Compare & Pull request** - Submit your changes for review
 
