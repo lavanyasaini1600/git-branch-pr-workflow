@@ -1,4 +1,4 @@
-- name: automerge
+- name: Merge me!
   uses: ridedott/merge-me-action@v1.2.62
   with:
     GITHUB_TOKEN: 8de32fbb30ade7e9b9718cd17c2d7912f111d8bb
