@@ -1,4 +1,4 @@
-# Add your initials and github link below using Markdown format
+# Add your initials and github link to the list below using Markdown format
 
-[SM](http://github.com/smccrindle)
-[RF](http://github.com/ifotn)
+* [SM](http://github.com/smccrindle)
+* [RF](http://github.com/ifotn)
