@@ -1,102 +1,70 @@
 This exercise will guide you to the basic git workflow of contributing your code to existing projects.
 
-<img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/fork.png" alt="fork this repository" />
+1. **Fork repo** by clicking on the fork button on the top of this page.
+   This will copy my repo and 'paste' it under your Github account.
 
-## Fork this repository
+1. **Clone your forked repository** to your computer. Go to your GitHub account, open the forked repository, click on the green code button and then click the _copy to clipboard_ icon.
 
-Fork this repository by clicking on the fork button on the top of this page.
-This will create a copy of this repository in your account.
+   Open a terminal and run the following git command:
 
-## Clone the repository
+   ```
+   git clone "url you just copied"
+   ```
 
-<img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/clone.png" alt="clone this repository" />
+1. **Create a branch** - Change to the repository directory on your computer (if you are not already there):
 
-Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the _copy to clipboard_ icon.
+   ```
+   cd git-branch-pr-workflow
+   ```
 
-Open a terminal and run the following git command:
+   Now create a branch using the `git checkout` command:
 
-```
-git clone "url you just copied"
-```
+   ```
+   git checkout -b your-new-branch-name
+   ```
 
-where "url you just copied" (without the quotation marks) is the url to this repository (your fork of this project). See the previous steps to obtain the url.
+   For example, you can create a branch using your initials:
 
-<img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/copy-to-clipboard.png" alt="copy URL to clipboard" />
+   ```
+   git checkout -b add-AV
+   ```
 
-For example:
+   (The name of the branch does not need to have the word _add_ in it, but it's a reasonable thing to include because the purpose of this branch is to add your name to a list.)
 
-```
-git clone https://github.com/this-is-you/first-contributions.git
-```
+1. **Make changes** - Open contributors.md; add your github link such as: `https://github.com/avcoder`.
 
-where `this-is-you` is your GitHub username. Here you're copying the contents of the first-contributions repository on GitHub to your computer.
+   If you go to the project directory and execute the command `git status`, you'll see there are changes.
 
-## Create a branch
+1. **Add those changes** to the branch you just created using the `git add` command:
 
-Change to the repository directory on your computer (if you are not already there):
+   ```
+   git add contributors.md
+   ```
 
-```
-cd first-contributions
-```
+1. **Commit those changes** using the `git commit` command:
 
-Now create a branch using the `git checkout` command:
+   ```
+   git commit -m "Add <your-initials> to Contributors list"
+   ```
 
-```
-git checkout -b your-new-branch-name
-```
+   replacing `<your-initials>` with your initials.
 
-For example:
+1. **Push changes** to GitHub
 
-```
-git checkout -b add-alonzo-church
-```
+   Push your changes using the command `git push`:
 
-(The name of the branch does not need to have the word _add_ in it, but it's a reasonable thing to include because the purpose of this branch is to add your name to a list.)
+   ```
+   git push origin <add-your-branch-name>
+   ```
 
-## Make necessary changes and commit those changes
+   replacing `<add-your-branch-name>` with the name of the branch you created earlier.
 
-Now open `Contributors.md` file in a text editor, add your name to it. Don't add it at the beginning or end of the file. Put it anywhere in between. Now, save the file.
+1. **Compare & Pull request** - Submit your changes for review
 
-<img align="right" width="450" src="assets/git-status.png" alt="git status" />
+   If you go to your repository on GitHub, you'll see a `Compare & pull request` button. Click on that button.
 
-If you go to the project directory and execute the command `git status`, you'll see there are changes.
+   Now submit the pull request.
 
-Add those changes to the branch you just created using the `git add` command:
+   Soon I'll be merging all your changes into the master branch of my repo.
 
-```
-git add Contributors.md
-```
-
-Now commit those changes using the `git commit` command:
-
-```
-git commit -m "Add <your-name> to Contributors list"
-```
-
-replacing `<your-name>` with your name.
-
-## Push changes to GitHub
-
-Push your changes using the command `git push`:
-
-```
-git push origin <add-your-branch-name>
-```
-
-replacing `<add-your-branch-name>` with the name of the branch you created earlier.
-
-## Submit your changes for review
-
-If you go to your repository on GitHub, you'll see a `Compare & pull request` button. Click on that button.
-
-<img style="float: right;" src="assets/compare-and-pull.png" alt="create a pull request" />
-
-Now submit the pull request.
-
-<img style="float: right;" src="assets/submit-pull-request.png" alt="submit pull request" />
-
-Soon I'll be merging all your changes into the master branch of this project. You will get a notification email once the changes have been merged.
-
-## Where to go from here?
-
-Congrats! You just completed the standard _fork -> clone -> edit -> pull request_ workflow that you'll encounter often as a contributor!
+1. Congrats! You just completed the standard _fork -> clone -> edit -> pull request_ workflow that you'll encounter often.
