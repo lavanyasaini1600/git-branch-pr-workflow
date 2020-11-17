@@ -8,4 +8,6 @@
 - [JS](https://github.com/jsgtaj)
 - [alazyfatcat](https://github.com/alazyfatcat)
 - [SY](https://github.com/itsso0621)
+- [JN](https://github.com/jasngyn/)
+- [NB](https://github.com/gc200295036)
 - [JP](https://github.com/JINAL-1)
